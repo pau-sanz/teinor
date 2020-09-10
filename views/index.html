@@ -1,0 +1,34 @@
+<body>
+    <div>
+        <h1>Teinor</h1>
+        <h3>Technical test</h3>
+    </div>
+    <div>
+        <input id="add" name="addFilm" type="submit" value="Add" class="" />
+        <form id="sendFilm" role="form" action="?ctl=add&act=film" method="POST" style="display: none;">
+            <input id="titleFilm" name="titlefilm" type="text" class="" />
+            <input id="yearFilm" name="yearfilm" type="text" class=""  autocomplete="off"/>
+            <button name="sendFilm" type="submit" class="">Send</button>
+        </form>
+    </div>
+    <script>
+    $( function() {
+      $( "#yearFilm" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'yy',
+            onClose: function(dateText, inst) { 
+                var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                $(this).datepicker('setDate', new Date(year, month, 1));
+            }
+      });
+    } );
+  </script>
+  <style>
+      .ui-datepicker-calendar, .ui-datepicker-month {
+        display: none;
+    }​
+    </style>
+
