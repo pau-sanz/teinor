@@ -2,11 +2,11 @@
 
 if (isset($_REQUEST['sendFilm'])) {
 
-    if (isset($_REQUEST['titlefilm'])) {
-        $title = $_REQUEST['titlefilm'];
+    if (isset($_REQUEST['titleFilm'])) {
+        $title = $_REQUEST['titleFilm'];
     }
-    if (isset($_REQUEST['yearfilm'])) {
-        $year = $_REQUEST['yearfilm']."-01-01";
+    if (isset($_REQUEST['yearFilm'])) {
+        $year = $_REQUEST['yearFilm']."-01-01";
     }
 
     $film = new Film($title, $year);
