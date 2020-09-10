@@ -1,4 +1,7 @@
-
 body {
     background-color: pink;
+}
+
+.ui-datepicker-calendar, .ui-datepicker-month {
+    display: none;
 }
