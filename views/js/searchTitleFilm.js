@@ -1,7 +1,7 @@
 var currentOrderBy = "DESC";
 
 $(document).ready(function () {
-    $("#searchingMovie").keyup(function () {
+    $("#searchingFilm").keyup(function () {
        getFilmsByTitle(this.value);
     });
     
@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
         
         getFilmsByTitle(
-            $("#searchingMovie").val(),
+            $("#searchingFilm").val(),
             $(this).attr('order')
         );
     });
@@ -44,5 +44,3 @@ function getFilmsByTitle(title, orderBy='DESC')
         }
     });
 }
-
-// ascende -- get movies

@@ -1,7 +1,7 @@
-<div class="">
-    <input id="searchingMovie" name="titlemovie" type="text" class="" />
+<input id="searchingFilm" name="titleFilmSearching" type="text" class="" />
     <button id="orderBy" order="ASC">Order Films</button>
-    <table id="filmList" class="">
+<div class="table-responsive text-nowrap">
+    <table id="filmList" class="table table-striped">
         <thead>
             <tr><th>Title</th>
                 <th>Year</th>
