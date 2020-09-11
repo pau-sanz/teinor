@@ -1,1 +1,1 @@
-# teinor
+# Teinor, technical test
