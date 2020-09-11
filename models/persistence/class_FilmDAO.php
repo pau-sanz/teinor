@@ -56,6 +56,29 @@ class FilmDAO {
         return $filmsArray;
     }
     
+    public function getFilmsByYear($year) 
+    {
+        if($year=="") return null;
+        
+        $filmsArray = array();
+        $con = new db();
+        $query = $con->prepare("SELECT title, YEAR(year) as year FROM film WHERE year='$year';");
+        $result = $con->consult($query);
+        
+        if(count($result) === 0) return null;
+        
+        foreach ($result as $row) {
+            $title = $row["title"];
+            $year = $row["year"];
+            $film = new Film($title, $year);
+
+
+            array_push($filmsArray, $film);
+        }
+        $con = null;
+        return $filmsArray;
+    }
+    
     
 
 }
