@@ -3,17 +3,13 @@
 require_once("autoload.php");
 $filmDAO = new FilmDAO;
 
-if (isset($_REQUEST['title']))
-    $title = $_REQUEST['title'];
-
-if (isset($_REQUEST['orderBy']))
-    $orderBy = $_REQUEST['orderBy'];
-
-if ($title !== "") {
-    $films = $filmDAO->getFilmsByTitle($title, $orderBy);
-} else {
-    $films = $filmDAO->populateFilms($orderBy);
+if (isset($_REQUEST['year']))
+    $year = $_REQUEST['year'];
+   
+if ($year !== "") {
+    $films = $filmDAO->getFilmsByYear($year);
 }
+
 
 if ($films !== null) {
     foreach ($films as $film) {

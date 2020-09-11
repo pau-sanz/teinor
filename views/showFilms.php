@@ -1,5 +1,8 @@
 <input id="searchingFilm" name="titleFilmSearching" type="text" class="" />
-    <button id="orderBy" order="ASC">Order Films</button>
+<button id="orderBy" order="ASC">Order Films</button>
+<select name="yearFilms" id="yearFilms">
+    <option value="chooseYear">Choose year...</option>
+</select>
 <div class="table-responsive text-nowrap">
     <table id="filmList" class="table table-striped">
         <thead>
