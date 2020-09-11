@@ -20,7 +20,12 @@ if ($films !== null) {
     }
     echo json_encode($elements_json);
 } else {
-    echo json_encode([]);
+    
+    $elements_json[] = [
+            'title' => 'No films found',
+            'year' => $year
+        ];
+    echo json_encode($elements_json);
 }
 
 

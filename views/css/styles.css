@@ -1,7 +1,26 @@
-body {
-    background-color: pink;
-}
-
 .ui-datepicker-calendar, .ui-datepicker-month {
     display: none;
+}
+
+.structTable {
+    margin-top: 50px;
+}
+
+.styleNotFound {
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.strucInputForm{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.styleLabelForm{
+    float: left;
+    margin-left: 25%;
+    padding-right: 20px;
+    margin-top: 10px;
 }

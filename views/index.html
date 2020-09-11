@@ -1,14 +1,25 @@
-<body>
-    <div>
-        <h1>Teinor</h1>
-        <h3>Technical test</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+            <div>
+                <h1>Teinor</h1>
+                <h3>Technical test</h3>
+            </div>
+            <input id="add" name="addFilm" type="submit" value="Add" class="" />
+            <form id="sendFilm" role="form" action="?ctl=add&act=film" method="POST" style="display: none;" class="px-4 py-3">
+                <div class="form-group">
+                    <label for="titleFilm">Title</label>
+                    <input type="text" class="form-control" name="titleFilm" id="titleFilm" placeholder="Title" />
+                </div>
+                <div class="form-group">
+                    <label for="yearFilm">Year</label>
+                    <input type="text" class="form-control" name="yearFilm" id="yearFilm" placeholder="Year" autocomplete="off" />
+                </div>
+                <button name="sendFilm" type="submit" class="">Send</button>
+            </form>
+            <div class="dropdown-divider"></div>
+        </div>         
     </div>
-    <div>
-        <input id="add" name="addFilm" type="submit" value="Add" class="" />
-        <form id="sendFilm" role="form" action="?ctl=add&act=film" method="POST" style="display: none;">
-            <input id="titleFilm" name="titleFilm" type="text" class="" />
-            <input id="yearFilm" name="yearFilm" type="text" class=""  autocomplete="off"/>
-            <button name="sendFilm" type="submit" class="">Send</button>
-        </form>
-    </div>
+</div>
+
 

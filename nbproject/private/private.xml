@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/controllers/showListFilmsByYear.php</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/models/persistence/interface_db.php</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/views/js/searchTitleFilm.js</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/models/persistence/class_FilmDAO.php</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/controllers/showFilms_ctl.php</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/views/showFilms.php</file>
+            <file>file:/J:/WebsXAMPP/htdocs/teinor/views/js/custom.js</file>
+        </group>
     </open-files>
 </project-private>
