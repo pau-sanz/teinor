@@ -5,7 +5,7 @@ function __autoload($class_name) {
     $curdir = getcwd();
 
     
-    chdir("$root/teinor/");
+    chdir("$root/teinor_technical_test/teinor/");
 
     $fileName = "class_" . $class_name . ".php";
     $persistenceFile = "models/persistence/" . $fileName;
