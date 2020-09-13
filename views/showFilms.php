@@ -1,10 +1,13 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <input id="searchingFilm" name="titleFilmSearching" type="text" class="" />
-            <button id="orderBy" order="ASC">Order Films</button>
-            <button id="showAll" order="ASC">All Films</button>
-            <select name="yearFilms" id="yearFilms">
+        <div class="col-md-6 offset-md-3"> 
+            <h3 class="text-center">Film searcher</h3>
+            <input id="searchingFilm" name="titleFilmSearching" type="text" class="form-control" />
+            <div class="margin-top-bottom-20">
+            <button id="orderBy" order="ASC" class="btn btn-secondary">Order Films</button>
+            <button id="showAll" order="ASC" class="btn btn-secondary">All Films</button>
+            </div>
+            <select name="yearFilms" id="yearFilms" class="custom-select custom-select-sm">
             </select>
             <table id="filmList" class="table table-sm structTable">
                 <thead>
@@ -24,7 +27,9 @@
                     ?>
                 </tbody>
             </table>
-            <a href="?ctl=index">Home</a>
+            <div class="margin-top-bottom-20">
+            <a href="?ctl=index"><button id="returnHome" class="btn btn-secondary">Home</button></a>
+            </div>
         </div>         
     </div>
 </div>
