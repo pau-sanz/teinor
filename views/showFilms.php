@@ -1,13 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h3 class="text-center">Film searcher</h3>
-            <input id="searchingFilm" name="titleFilmSearching" type="text" class="form-control" />
-            <div class="struc-buttons-filter">
-            <button id="orderBy" order="ASC" class="btn btn-secondary">Order Films</button>
-            <button id="showAll" order="ASC" class="btn btn-secondary">All Films</button>
-            </div>
-            <select name="yearFilms" id="yearFilms" class="custom-select custom-select-sm">
+            <input id="searchingFilm" name="titleFilmSearching" type="text" class="" />
+            <button id="orderBy" order="ASC">Order Films</button>
+            <button id="showAll" order="ASC">All Films</button>
+            <select name="yearFilms" id="yearFilms">
             </select>
             <table id="filmList" class="table table-sm structTable">
                 <thead>
